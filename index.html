@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html>
+
+
+    <head>
+    
+        <title>E commerce Responsive Website </title>
+        
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/script.js"></script>
+
+         <!--  Js files-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <!--For Carousel Effect-->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        
+    </head>
+    
+    <body>
+        
+        <!-- Header section-->
+        <header class="header" >
+            
+            <div class="container">
+                
+                 <div class="row">
+                     
+                    <div class= " col-md-6">
+                        <div class="logo text-left">
+                            <img src="images/beep-1@2x.png" alt="logo">
+                        </div>
+                         
+                    </div>
+                    <div class="col-md-5">
+                         <div class="nav-options">
+                               <div class="container">
+                                   <div class="row">
+                                       <div class="col-md-1"></div>
+                                       <div class="col-md-2 text-right">
+                                           <p><img src="images/profile_close_2.png">
+                                            My profile</p>
+                                       </div>
+                                       <div class="col-md-2 text-right">
+                                           <p><img src="images/bag_3.png"> 0 Items  </p>
+                                           
+                                       </div>
+                                       <div class="search col-md-1 text-left"><p1>$0.00  </p1><img src="images/search-icon.png"></div>
+                                       <div class="col-md-1"></div>
+                                   </div>
+                             </div>
+                           </div> 
+                        </div>
+                     </div>
+                     
+                </div>
+            
+        </header>
+        
+        <!-- Section class home-->
+        <section class="Home">
+        
+            <div class="container">
+                 <div class="row">
+                    <div class= " col-md-12">
+                     
+                        <div class="header-text HOME access">
+                         <a class="btn btn-small " href="#">Home /   </a> <a class="btn btn-small " href="#"> Accessories</a>
+                        </div>
+                         
+                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section class Categories-->
+        <section class= "categories">
+            
+            <div class="container">
+                
+                <div class="row">
+                <div class= " sectionbg col-md-3">
+                           <h2>all  categories</h2>
+                        
+                             <div class="option"><a href="#"><p2>Accessories</p2></a></div>
+                        
+                            <div class="option"><a href="#"><p1> Cables and docks</p1></a></div>
+                        
+                            <div class="option"><a href="#"><p1>Cases and films</p1></a></div>
+                        
+                            <div class="option"><a href="#"> <p1>Charging Devices</p1></a></div>
+                        
+                            <div class="option"><a href="#"><p1>Connected home</p1></a></div>
+                        <br>
+                                <a href="#"> <p1>Headphones</p1></a>
+                            
+                </div>
+                
+                <div class="col-md-9">
+                       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+
+                          <!-- slides -->
+                          <div class="carousel-inner">
+                            <div class="item active">
+                              <img src="images/2.jpg" alt="Carousel 1">
+                            </div>
+
+                            <div class="item">
+                              <img src="images/caraosal%202.jpg" alt="Carousel 2">
+                            </div>
+                              
+                               <div class="item">
+                              <img src="images/caraosal%203.jpg" alt="Carousel 3">
+                            </div>
+                           </div>
+                           
+                           <!-- Left and right controls -->
+                              <a class="left carousel-control" href="#myCarousel" data-slide="prev"> </a>
+                              <a class="right carousel-control" href="#myCarousel" data-slide="next"> </a>
+                            </div>
+                             
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Section main-->
+        <section class="main">
+            <div class="container">
+                <div class="row">
+                    
+                    <!--=============================Left Part===================================-->
+                    <div class="col-md-3">
+                        
+                        <!--Prices section-->
+                        <div class="prices">
+                        <div class="container">
+                            <div class="row"><br>
+                                <div class="sectionbg col-md-3 ">
+                                    <div class="row">
+                                        <!-- Pricearea -->
+                                        <div class=" col-md-12 text-left"><h2>prices</h2></div>
+                                    </div>
+                                <div class="row">
+                                    <div class=" min col-md-2 col-md-offset-1"><p1>Min</p1></div>
+                                    <div class=" col-md-6"></div>
+                                    <div class=" max col-md-2  "><p1>Max</p1></div>
+                                </div>
+                                <div class="row">
+                                    <div class="row">
+                                        <div class=" col-md-4 col-md-offset-1">
+                                            <div class ="place-hold">
+                                                <input placeholder="$499" id="leftinput">
+                                            </div>
+                                        </div>
+                                    <div class=" col-md-1"> - </div>
+                                        <div class=" col-md-4 col-md-offset-1">
+                                            <div class ="place-hold">
+                                              <input placeholder="$499" id="rightinput" onmouseout="compare()">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <!--Color section-->
+                        <div class="container">
+                            <div class="row"><br>
+                                <div class="sectionbg col-md-3">
+                                    <div class ="colour" >
+                                        <p class="price-colour-brand">COLOUR</p>
+                                        <label class="radio-inline ">
+                                          <input type="radio" name="optradio" checked><span class="checkmark1"></span>
+                                        </label>
+                                        <label class="radio-inline ">
+                                          <input type="radio" name="optradio"><span class="checkmark2"></span>
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio"  name="optradio"><span class="checkmark3"></span>
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio"  name="optradio"><span class="checkmark4"></span>
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio"  name="optradio"><span class="checkmark5"></span>
+                                        </label>
+                                        <label class="radio-inline">
+                                          <input type="radio"  name="optradio"><span class="checkmark6"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div><br>
+                        </div>
+                        
+                        <!--Brand section-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="sectionbg col-md-3 ">
+                                    <div class="brand" >
+                                        <p class="price-colour-brand">BRAND</p>
+                                        <div class = "brand-values">
+                                        <div class="brand-indiv">
+                                            <p> <a href="#"> Apple 99</a></p>
+                                        </div>
+                                        <div class="brand-indiv"><p1>Beats 99</p1></div>
+                                        <div class="brand-indiv"><p2>Samsung 99</p2></div>
+                                        <div class="brand-indiv"><p3>Simens 99</p3></div>
+                                        </div><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- "more" button-->
+                        <div class="Morebtn">
+                            <div class="container">
+                                <div class="row"><br>
+                                    <div class="sectionbg col-md-3 ">
+                                        <a class="btn btnmore " text-center href="#"><p> More</p></a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                    <!--===============================Right part=======================================-->
+                    <div class="  col-md-8">
+                        
+                         <!--Filters area-->
+                        <div class="container">
+                            <div class="row"><br>
+                                
+                                    <div class="filters sectionbg col-md-8">
+                                        <div class=" col-md-2  text-left"><p1>13 items</p1></div>
+                                        
+                                        <div class=" col-md-2  text-left"><p1>Sort by</p1></div>
+                                        <div class=" col-md-2  ">
+                                            <a href="#"><p1>Name</p1>
+                                            <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class=" col-md-2  text-left"><p1>Show</p1></div>
+                                        <div class=" col-md-1  ">
+                                            <a href="#"><p1>12</p1>
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                        </div>
+                                        <div class=" col-md-1  ">
+                                            
+                                        </div>
+                                    </div>
+                                   
+                                
+                            </div>
+                        </div>
+                        
+                        <!--Main purchase area-->
+                        <div class="container">
+                        <div class="row">
+                         <!-- Row 1-->
+                        <div class= "Pricelist-overlay">
+                            
+                            <div class="container">
+                                
+                                <div class="row">
+                                
+                                    <div class="col-md-3 text-center">
+                                        <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                           
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                   
+                                    
+                                    <div class="col-md-3 text-center">
+                                        
+                                       <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                 
+                                    
+                                    <div class="col-md-3 text-center ">
+                                    
+                                       <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                           
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                        
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                        <!--Row 2-->
+                        <div class= "Pricelist-overlay">
+                            
+                            <div class="container">
+                                
+                                <div class="row">
+                                
+                                    <div class="col-md-3 text-center">
+                                        <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                           
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                   
+                                    
+                                    <div class="col-md-3 text-center">
+                                        
+                                       <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                 
+                                    
+                                    <div class="col-md-3 text-center ">
+                                    
+                                       <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                           
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                        
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                        <!--Row 3-->
+                        <div class= "Pricelist-overlay">
+                            
+                            <div class="container">
+                                
+                                <div class="row">
+                                
+                                    <div class="col-md-3 text-center">
+                                        <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                           
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                   
+                                    
+                                    <div class="col-md-3 text-center">
+                                        
+                                       <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    
+                                    </div>
+                                    
+                                 
+                                    
+                                    <div class="col-md-3 text-center ">
+                                    
+                                       <div class="item-display">
+                                        
+                                            <img src="images/Rectangle%205.png">
+                                            <p class="item-cont">Apple Macbook Pro </p>
+                                            
+                                            <div class="stars-com">
+                                            
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star checked"></span>
+                                                <span class="fa fa-star unchecked"></span>
+                                            </div>
+                                            
+                                            <div class="price-display">
+                                               
+                                                <p class="dis-price"> <span style="color: red">$499 &nbsp; &nbsp; </span> <del> $599 </del> </p>
+                                           
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                        
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                        <!--All items displayed-->
+                         
+                        </div>
+                        </div>
+                        
+                        <!--Page numbers-->
+                        <div class="container">
+                            <div class=" row"><br>
+                                <div class=" page sectionbg2 col-md-9">
+                                <div class=" col-md-4">  </div>
+                                     <a class="col-md-1" href="#"> <p> 1</p> </a>
+                                     <a class="col-md-1" href="#"><p>2</p> </a>
+                                     <a class="sectionbg1 col-md-1 text-center" href="#"> <p1> 3</p1> </a>
+                                     <a class="col-md-1" href="#"> <p> 4</p> </a>
+                                     <a class="col-md-1" href="#"> <p> 5</p> </a>
+                                <div class=" col-md-2">   </div>
+                                </div>
+                                </div><br>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--Section About us-->
+        <section class="about us">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutus">
+                        
+                        <!--about us-->
+                        <div class="abt col-md-3">
+                            <img src="images/beep@2x.png" alt="logo">
+                            <p> Lorem Ipsum is simply the dummy text of the typesetting industry. Lorem Ipsum has been the industry's standard typesetting text ever. Since 1500s when an unknown printer.</p>
+                        </div>
+                        <div class="col-md-2"></div>
+                        
+                        <!--Follow us-->
+                        <div class="follow  col-md-3 ">
+                            <h1><b>Follow us</b> </h1><br>
+                            <p>Sice the 1500s when an unknown printer took a galley of type and scrambled.</p><br>
+                            <img src="images/facebook@2x.png" alt="fb"><img src="images/twitter@2x.png" alt="twitter">
+                            
+                        </div>
+                        <div class="col-md-1"></div>
+                        
+                        <!--Contact us-->
+                        <div class="contactus col-md-3">
+                            <h1><b>Contact us</b> </h1><br>
+                            <p>My Company, 4578 Marmora Road, Glasglo</p>
+                            <p>D04 89GR</p>
+                            <p>Call us now: 0123-456-789</p>
+                            <p>Email: support@whatever.com</p>
+                        </div>
+                    </div>
+                </div><br><br>
+            </div>
+        </section>
+        
+        <!--Footer-->
+        <footer>
+            <div class="footersec">
+            <div class="row ">
+                
+                 <div class="col-md-1"></div>
+                
+                  <div class="col-md-3 ">
+                    <p>&#169; 2021 Ecommerce site by www.beep.com </p>
+                  </div>
+                
+                <div class="col-md-5">  </div>
+                
+                <div class="col-md-3">
+                         <img src="images/Western-union.png">
+                         <img src="images/Group%2019.png">
+                         <img src="images/Paypal.png">
+                         <img src="images/Shape%20328.png">
+                </div>
+            </div>
+            </div>      
+        </footer>
+    </body>
+</html>
+        
+        
+        
+        
+        
+        
